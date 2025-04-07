@@ -1,0 +1,121 @@
+/* General Body Styles */
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Panel Styling */
+.panel {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panel:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Panel Heading */
+.panel-heading {
+    background: linear-gradient(90deg, #007bff, #6f42c1);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Panel Footer */
+.panel-footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Styling */
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 12px;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Focus Effect */
+.form-control:focus {
+    border-color: #6f42c1;
+    box-shadow: 0 0 8px rgba(111, 66, 193, 0.5);
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: linear-gradient(90deg, #007bff, #6f42c1);
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+}
+
+/* Button Hover Effect */
+.btn-primary:hover {
+    background: linear-gradient(90deg, #6f42c1, #007bff);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .panel {
+        padding: 20px;
+    }
+
+    .panel-heading {
+        font-size: 1.5em;
+    }
+}
