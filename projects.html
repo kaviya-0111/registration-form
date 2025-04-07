@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects - My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f2f4f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .topnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e1e2f;
+            padding: 15px 40px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #1e1e2f;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #007c91;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .footer {
+            background-color: #1e1e2f;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <div class="logo">My Portfolio</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>My Projects</h1>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Smart Cold Storage Monitoring System</h3>
+                <p>An IoT-based solution to monitor temperature and humidity levels in real-time using sensors and microcontrollers.</p>
+            </div>
+            <div class="card">
+                <h3>IoT Ultrasonic Radar & Missile Tracker</h3>
+                <p>A defense system integrating ultrasonic radar, gas sensors, and real-time alerts using Blynk IoT platform.</p>
+            </div>
+            <div class="card">
+                <h3>Event Management Website</h3>
+                <p>A fully responsive web application to manage and register for events online, designed with modern UI/UX practices.</p>
+            </div>
+            <div class="card">
+                <h3>Perfume Info Web App</h3>
+                <p>An elegant front-end website presenting detailed information about various perfumes using HTML, CSS, and JS.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Kaviya R. All Rights Reserved | Designed with ❤️
+    </div>
+
+</body>
+</html>
